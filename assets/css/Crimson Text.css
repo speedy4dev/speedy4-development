@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Crimson Text';
+	src: url(../../assets/fonts/Crimson%20Text-06a381a09a7a41fbb61eee16637f1155.woff2) format('woff2'),
+	url(../../assets/fonts/Crimson%20Text-94728c0e25bdb5f6d8218b718c167b6d.woff) format('woff');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}

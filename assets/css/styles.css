@@ -1,0 +1,249 @@
+[data-bs-theme="light"] .section-image, .section-image {
+  background: url("../../assets/img/website_background_1.png") !important;
+}
+
+[data-bs-theme="dark"] .section-image {
+  background: url("../../assets/img/website_background_2.png") !important;
+}
+
+[data-bs-theme="light"] .glass-item {
+  /*width: 85% !important;*/
+  /*margin: 0.25rem auto 0 !important;*/
+  /*border-radius: 100px !important;*/
+  background: rgba(248, 248, 249, 0.375);
+  backdrop-filter: blur(8px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(8px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25) !important;
+}
+
+[data-bs-theme="dark"] .glass-item {
+  /*width: 85% !important;*/
+  /*margin: 0.25rem auto 0 !important;*/
+  /*border-radius: 100px !important;*/
+  background: rgba(21, 24, 30, 0.375) !important;
+  backdrop-filter: blur(8px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(8px) saturate(180%) !important;
+  border: 1px solid rgba(29,43,71,0.25) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25) !important;
+  color: rgb(248,248,249);
+}
+
+[data-bs-theme="light"] .glass-navbar {
+  /*width: 85% !important;*/
+  /*margin: 0.25rem auto 0 !important;*/
+  /*border-radius: 100px !important;*/
+  background: rgba(248, 248, 249, 0.375) !important;
+  /*backdrop-filter: blur(8px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(8px) saturate(180%) !important;*/
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25) !important;
+}
+
+[data-bs-theme="dark"] .glass-navbar {
+  /*width: 85% !important;*/
+  /*margin: 0.25rem auto 0 !important;*/
+  /*border-radius: 100px !important;*/
+  background: rgba(21, 24, 30, 0.375) !important;
+  /*backdrop-filter: blur(8px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(8px) saturate(180%) !important;*/
+  border: 1px solid rgba(29,43,71,0.25) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25) !important;
+}
+
+[data-bs-theme="dark"] .navbar-logo-wordmark {
+  filter: invert(100%);
+}
+
+[data-bs-theme="dark"] .navbar-logo-wordmark-fr {
+  filter: invert(100%);
+}
+
+[data-bs-theme="dark"] .navbar-logo-img {
+  filter: invert(100%);
+}
+
+[data-bs-theme="dark"] .navbar-logo-img-fr {
+  filter: invert(100%);
+}
+
+.navbar-nav1 {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+@media (min-width: 1620px) {
+  .navbar-logo-img {
+    display: none;
+  }
+}
+
+@media (min-width: 1820px) {
+  .navbar-logo-img-fr {
+    display: none;
+  }
+}
+
+@media (max-width: 1620px) {
+  .navbar-logo-wordmark {
+    display: none;
+  }
+}
+
+@media (max-width: 1820px) {
+  .navbar-logo-wordmark-fr {
+    display: none;
+  }
+}
+
+@media (max-width: 1420px) {
+  .navbar-contact-text {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-subtitle {
+    margin-bottom: -0.5rem !important;
+    font-size: 0.65rem !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1600px) {
+  .hero-subtitle {
+    margin-bottom: -2rem !important;
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-button {
+    margin-top: -0.5rem !important;
+    font-size: 0.75rem !important;
+    /*width: auto !important;*/
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1600px) {
+  .hero-button {
+    margin-top: -2rem !important;
+    font-size: 1rem !important;
+    /*width: auto !important;*/
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    margin-top: 5rem !important;
+    /*font-size: 0.75rem !important;*/
+    /*width: auto !important;*/
+  }
+}
+
+.section-padding {
+  padding-top: env(safe-area-inset-top);
+}
+
+.navbar-toggler-icon {
+  background-image: url("../../assets/img/MdiDotsHorizontal.svg") !important;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav-collapse {
+    /*background-color: rgba(21,24,30,0.375);*/
+    /*backdrop-filter: blur(8px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(8px) saturate(180%) !important;*/
+    /*border: 1px solid rgba(255, 255, 255, 0.25) !important;*/
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25) !important;
+    z-index: 2 !important;
+  }
+}
+
+.navbar-nav-collapse, .navbar-nav1 {
+  isolation: auto !important;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav-collapse:before {
+    content: "" !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: rgba(248, 248, 249, 0.375) !important;*/
+    backdrop-filter: blur(8px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(8px) saturate(180%) !important;
+    z-index: -1 !important;
+    border-radius: 24px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  [data-bs-theme="light"] .navbar-nav-collapse:before {
+    background-color: rgba(248, 248, 249, 0.375) !important;
+    border: 1px solid rgba(255,255,255,0.25);
+  }
+}
+
+@media (max-width: 768px) {
+  [data-bs-theme="dark"] .navbar-nav-collapse:before {
+    background-color: rgba(21, 24, 30, 0.375) !important;
+    border: 1px solid rgba(29,43,71,0.25) !important;
+  }
+}
+
+.glass-navbar:before {
+  content: "" !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(248, 248, 249, 0) !important;
+  backdrop-filter: blur(8px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(8px) saturate(180%) !important;
+  z-index: -1 !important;
+  border-radius: 100px !important;
+}
+
+[data-bs-theme="light"] .default-body {
+  background: linear-gradient(135deg, #f8f8f9, #d7d6d9 100%);
+}
+
+[data-bs-theme="dark"] .default-body {
+  background: linear-gradient(135deg, #15181f, #0b1222 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+[data-bs-theme="light"] .roblox-icon {
+  content: url("../../assets/img/Roblox_Logo_Dark.svg");
+}
+
+[data-bs-theme="dark"] .roblox-icon {
+  content: url("../../assets/img/Roblox_Logo.svg");
+}
+
+.custom-lightbox, .custom-lightbox-gallery {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.25) !important;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000 !important;
+  /*visibility: hidden;*/
+  /*pointer-events: none;*/
+}
+
+.custom-lightbox.active, .custom-lightbox-gallery.active {
+  display: flex !important;
+}
+

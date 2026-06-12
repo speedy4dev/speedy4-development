@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'IBM Plex Mono';
+	src: url(../../assets/fonts/IBM%20Plex%20Mono-4c205e0853b1cfa4838600626ba8c8a8.woff2) format('woff2'),
+	url(../../assets/fonts/IBM%20Plex%20Mono-daca951c0222f443971df1e2aad4e54d.woff) format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
