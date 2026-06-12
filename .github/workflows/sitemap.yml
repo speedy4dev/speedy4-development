@@ -1,0 +1,40 @@
+name: Generate Sitemap and Deploy
+
+on:
+  push:
+    branches: [ main ]  # Change to master if your default branch is named master
+
+permissions:
+  contents: write      # Required to save the sitemap to your repo
+  pages: write         # Required to host your site
+  id-token: write      # Required for security authentication
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate Sitemap
+        uses: cicirello/generate-sitemap@v1.10.4
+        with:
+          base-url-path: https://speedy4.dev # Replace with your real URL
+
+      - name: Commit Sitemap Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@://github.com"
+          git add sitemap.xml
+          git diff-index --quiet HEAD || git commit -m "Automated sitemap update"
+          git push
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
